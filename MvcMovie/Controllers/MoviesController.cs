@@ -20,6 +20,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies
+        [HttpPost]
         public async Task<IActionResult> Index(string searchString)
         {
             var movies = from m in _context.Movie
